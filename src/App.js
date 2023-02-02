@@ -28,7 +28,7 @@ export default function App() {
   // if you are happy with Geocoder default settings, you can just use handleViewportChange directly
   const handleGeocoderViewportChange = useCallback(
     (newViewport) => {
-      const geocoderDefaultOverrides = { transitionDuration: 500 };
+      const geocoderDefaultOverrides = { transitionDuration: 1000 };
 
       return handleViewportChange({
         ...newViewport,
@@ -73,4 +73,5 @@ export default function App() {
     </div>
   );
 };
+
 
